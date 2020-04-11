@@ -312,7 +312,7 @@ class Selection {
 
     if (!this._initialEventData) return
 
-    let inRoot = !this.container || contains(this.container(), e.target)
+    let inRoot = true
     let bounds = this._selectRect
     let click = this.isClick(pageX, pageY)
 
